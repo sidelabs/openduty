@@ -1,6 +1,15 @@
 language: python
 python:
   - "2.7"
+os: linux
+dist:
+  - xenial
+  - bionic
+before_install:
+  - sudo apt-get -y install libxml2-dev libsasl2-dev python-dev libldap2-dev libssl-dev
+addons:
+  apt:
+    update: true
 env:
   - DJANGO_SETTINGS_MODULE=openduty.settings_dev
 install:
