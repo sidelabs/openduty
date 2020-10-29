@@ -1,22 +1,20 @@
 # Build status
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ustream/openduty)
+
 [![image](https://api.travis-ci.org/ustream/openduty.svg)](https://travis-ci.org/ustream/openduty)
 [![Requirements Status](https://requires.io/github/openduty/openduty/requirements.svg?branch=master)](https://requires.io/github/openduty/openduty/requirements/?branch=master)
 
-# Important notice - project suspended
-The ex-Ustream team which is now part of IBM are **no longer maintaining this project**. Feel free to fork it and maintain it somewhere else, we will leave it accessible here but no new merges or commits will be made. Soon we will set the repository to read-only on Github.
-
 # What is this?
-**Openduty** is an incident escalation tool, just like [Pagerduty](http://pagerduty.com) . It has a Pagerduty compatible API too. It's the result of the first [Ustream Hackathon](http://www.ustream.tv/blog/2014/03/27/hackathon-recap-21-ideas-11-teams-one-goal/). We enjoyed working on it.
+~**Openduty**~ Zener is an incident escalation tool, just like [Pagerduty](http://pagerduty.com) but better . It has a Pagerduty compatible API too. It's the result of the first [Ustream Hackathon](http://www.ustream.tv/blog/2014/03/27/hackathon-recap-21-ideas-11-teams-one-goal/). We enjoyed working on it.
 #Integrations
 Has been tested with Nagios, works well for us. Any Pagerduty Notifier using the Pagerduty API should work without a problem.
 [Icinga2 config](https://github.com/deathowl/OpenDuty-Icinga2) for openduty integration
 
 # Notifications
 XMPP, email, SMS, Phone(Thanks Twilio for being awesome!), and Push notifications(thanks Pushover also),and Slack are supported at the moment.
+
 # Current status
-Openduty is in Beta status, it can be considered stable at the moment, however major structural changes can appear anytime (not affecting the API, or the Notifier structure)
+Openduty is in pre-Alpha status, it can be considered unstable at the moment, however major structural changes can appear anytime (not affecting the API, or the Notifier structure)
 
 # Contribution guidelines
 Yes, please. You are welcome.
@@ -24,8 +22,7 @@ Yes, please. You are welcome.
 Any feedback is welcome
 
 # Try it
-go to http://openduty.herokuapp.com , log in with root/toor , create your own user.
-In heroku demo mode user edit feature is disabled, so you can't misbehave.
+
 
 # Running on Heroku
 add the parts below to your settings.py and add psycopg2==2.5.1 to your requirements.txt
@@ -51,22 +48,6 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 ```
-
-# Contributors at Ustream
-- [oker](http://github.com/oker1)
-- [tyrael](http://github.com/tyrael)
-- [dzsubek](https://github.com/dzsubek)
-- [ecsy](https://github.com/ecsy)
-- [akos](https://github.com/gyim)
-
-![The team](http://deathowlsnest.com/images/cod.jpg)
-# Main contributors
-- [deathowl](http://github.com/deathowl) 
-
-# Other contributors
-- [DazWorrall](https://github.com/DazWorrall)
-- [leventyalcin](https://github.com/leventyalcin)
-- [sheran-g](https://github.com/sheran-g)
 
 # Getting started:
 ```
