@@ -1,4 +1,3 @@
-  
 FROM ubuntu:16.04
 # prepare python2.7 environment
 RUN apt-get update -y && apt-get upgrade -y 
